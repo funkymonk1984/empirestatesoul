@@ -1,0 +1,162 @@
+
+$h1-font-size: 4.2em;
+$h2-font-size: 3.6em;
+$h3-font-size: 2.4em;
+$h4-font-size: 1.6em;
+$p-font-size: 1.2em;
+
+body {
+
+	a,
+	a:hover,
+	a:active,
+	a:visited,
+	a:visited:hover {
+		color:$primary-primary;
+		outline:0 !important;
+	}
+
+	h1, h2, h3, h4 {
+		color:$primary-lighter;
+		text-align: center;
+	}
+
+	h1 {
+		font-family: $subheading-font;
+		font-size: $h1-font-size;
+	}
+
+	h2 {
+		font-family: $heading-font,serif;
+		font-size: $h2-font-size;
+		margin: 0;
+		color:$red-lighter;
+
+	}
+
+	h3 {
+		font-family: $subheading-font;
+		color: $grey-primary;
+		font-size: $h3-font-size;
+		font-weight: 500;
+		line-height: inherit;
+	}
+
+	h2 + h3 {
+		margin:.6rem 0 2rem 0;
+	}
+
+	h2 + h3 span {
+		font-weight: 700;
+		color:$primary-lighter;
+	}
+
+	h2 + h3::after {
+	    content:"";
+  		background:url('../images/badge.png');
+  		background-size: 48px 48px;
+  		background-position:center;
+  		width:48px;
+  		height:48px;
+	    display: block;
+	    clear:both;
+	    margin: 1rem auto;
+	}
+
+	h4 {
+		font-size: $h4-font-size;
+		color:$grey-darker;
+		text-align: left;
+		font-weight: bold;
+		text-transform: uppercase;
+
+	}
+
+	.lead {
+		//font-size:1.6rem;
+	}
+
+	p, li {
+		font-size: $p-font-size;
+		color:$grey-primary;
+		font-weight: 400;
+		line-height: 2rem;
+
+	}
+
+	li {
+		list-style-type: disc;
+		margin: 0 0 1em 0;
+		line-height: 1.6em;
+		//margin:.8rem 0 0 1rem;
+
+	}
+
+	ul {
+		margin:1rem 0 1rem 1rem;
+	}
+}
+
+@media (max-width: 992px) {
+
+	body {
+
+		h1, h2, h3, h4 {
+			text-align: center;
+		}
+
+		h1 {
+			font-size: calc(#{$h1-font-size} * .8);
+		}
+
+		h2 {
+			font-size: calc(#{$h2-font-size} * .8);
+		}
+
+		h3 {
+			font-size: calc(#{$h3-font-size} * .8);
+		}
+
+		h4 {
+			font-size: calc(#{$h4-font-size} * .8);
+		}
+
+		.lead {
+			//font-size:1.4rem;
+		}
+
+		.center-on-mobile {
+			text-align: center !important;
+
+			* {
+				text-align: center !important;
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+
+	body {
+
+		h1 {
+			font-size: calc(#{$h1-font-size} * .6);
+		}
+
+		h2 {
+			font-size: calc(#{$h2-font-size} * .6);
+		}
+
+		h3 {
+			font-size: calc(#{$h3-font-size} * .8);
+		}
+
+		h4 {
+
+		}
+
+		.lead {
+			//font-size:1.2rem;
+		}
+	}
+}

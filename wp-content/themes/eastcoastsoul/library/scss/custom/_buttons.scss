@@ -1,0 +1,73 @@
+body {
+
+	.button-wrapper {
+		margin: 2.4rem 0;
+	}
+
+	.btn {
+		background-color:$primary-primary;
+		color:#FFF;
+		transition-property: background-color;
+		transition-duration: .2s;
+		outline:0;
+		border:none;
+		font-weight:900;
+		text-transform: uppercase;
+		padding:1rem 2rem;
+		font-size: 1rem;
+		outline:0 !important;
+		margin:.2rem;
+		border-radius: 0;
+		min-width: 12rem;
+	}
+
+	.btn:hover {
+		background-color:$primary-darker !important;
+		color:#FFF;
+	}
+
+	.btn:visited {
+		color:#FFF !important;
+		background-color:$primary-darker;
+		outline:0;
+	}
+
+	.btn:active,
+	.btn-primary:active {
+		background-color:$primary-primary;
+	}
+
+	.btn-primary {
+		background-color:$primary-primary;
+	}
+
+	.btn-primary:visited,
+	.btn-primary:active,
+	.btn-primary:focus,
+	.btn-primary:active:visited,
+	.btn-primary:visited:active {
+		background-color:$primary-primary;
+	}
+
+	.btn-primary:focus {
+		background-color:$primary-darker;
+	}
+
+	.btn-primary-outline,
+	.btn-primary-outline:visited,
+	.btn-primary-outline:visited:hover {
+		background-color: transparent;
+		border: .1rem solid #FFF;
+		color: #FFF;
+	}
+
+	.btn-primary-outline:active {
+		color:#FFF;
+	}
+
+	.btn-primary-outline:hover {
+		background-color: $white !important;
+		border: .1rem solid #FFF;
+		color: $grey-primary !important;
+	}
+}

@@ -1,0 +1,12 @@
+Just a simple file to remember things :)
+
+== BASICS
+
+Media File Renamer renames the files, the related files (if thumbnails have been generated for the Media being modified) and then look for references to those files in the database to rename them.
+
+== CORE HELPERS
+
+== REFERENCES CHECK
+(Images that are detected as used by WordPress)
+
+
